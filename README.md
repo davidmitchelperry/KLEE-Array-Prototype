@@ -13,6 +13,7 @@ employs this optimization along with its ISSTA '17 publication
 at: www.srg.doc.ic.ac.uk/projects/klee-array
 
 Example Optimization:  
+```
 // Consider the array:   
 int array[5] = {0,2,4,6,8};  
 
@@ -24,7 +25,6 @@ val = array[symb_idx];
 // Since statically allocated arrays have known values this   
 // encoding is overly complex. Therefore, we replace the above   
 // symbolic index read with a set of instructions:  
-```
 switch (symb_idx)  
 {  
 	case 0:  
