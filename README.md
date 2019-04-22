@@ -1,8 +1,8 @@
-This is a LLVM 3.4 pass that uses switch statements to implement a 
-proof of concept for the the accelerated array optimization for
-Symbolic Execution. The original idea for the optimization was
-to implement it by instrumenting the target program before
-running it through symbolic execution. This prototype showed
+This is a LLVM 3.4 pass that uses switch statements to implement a  
+proof of concept for the the accelerated array optimization for  
+Symbolic Execution. The original idea for the optimization was  
+to implement it by instrumenting the target program before  
+running it through symbolic execution. This prototype showed  
 promise and drastically improved the performance of symbolic 
 execution on many programs. However, due to some of the overhead
 of instrumentation we found that implementing the optimization
