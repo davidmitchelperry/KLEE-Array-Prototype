@@ -24,7 +24,8 @@ val = array[symb_idx];
 // Since statically allocated arrays have known values this   
 // encoding is overly complex. Therefore, we replace the above   
 // symbolic index read with a set of instructions:  
-`switch (symb_idx)  
+```
+switch (symb_idx)  
 {  
 	case 0:  
 		val = 0;  
@@ -41,4 +42,5 @@ val = array[symb_idx];
 	case 4:  
 		val = 8;  
 		break;  
-}`
+}
+```
