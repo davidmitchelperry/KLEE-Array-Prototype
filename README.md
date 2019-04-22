@@ -4,7 +4,7 @@ Symbolic Execution. The original idea for the optimization was
 to implement it by instrumenting the target program before
 running it through symbolic execution. This prototype showed
 promise and drastically improved the performance of symbolic
-execution on many programs. However, due to some of the overheah
+execution on many programs. However, due to some of the overhead
 of instrumentation we found that implementing the optimization
 directly in the Symbolic Executin engine would be optimal.
 
